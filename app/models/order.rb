@@ -2,6 +2,7 @@
 
 class Order < ApplicationRecord
   include AASM
+  has_paper_trail 
   
   aasm do
     state :ordered, initial: true
